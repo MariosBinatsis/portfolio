@@ -1,0 +1,74 @@
+.notifications-container {
+  max-width: 820px;
+  margin: 50px auto;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.notification-card {
+  position: relative;
+  background-color: #ffffff;
+  color: #444;
+  padding: 20px 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  font-weight: 500;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.5;
+  border-left: 5px solid transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.notification-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.notification-card.info {
+  border-color: #fbeebe; /* Υπενθύμιση */
+}
+
+.notification-card.success {
+  border-color: #58b378; /* Επιτυχία */
+}
+
+.notification-card.warning {
+  border-color: #e0a54b; /* Προειδοποίηση */
+}
+
+.notification-card.feature {
+  border-color: #6c9bd2; /* Νέα δυνατότητα */
+}
+
+.nav-links a.notification-alert {
+  position: relative;
+}
+
+.nav-links a.notification-alert::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+/* Badge "ΝΕΟ" πάνω στην κάρτα */
+.notification-card.new::after {
+  content: "ΝΕΟ";
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  background-color: #ff5b57;
+  color: white;
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <title>HR Manager Panel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="hr_panel.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="text-logo">
+      <div class="logo-main">osphresis</div>
+      <div class="logo-sub">perfumery</div>
+    </div>
+
+    <div class="nav-container">
+      <nav class="nav-links">
+        <a href="submit_preferences.html">Υποβολή Προτιμήσεων</a>
+        <a href="schedule_preview.html">Εβδομαδιαίο Πρόγραμμα</a>
+        <a href="notifications.html">Ειδοποιήσεις</a>
+        <a href="managers_login.html" class="active">HR Manager Panel</a>
+      </nav>
+    </div>
+
+    <div class="user-badge">ΓΝ</div>
+  </header>
+
+  <!-- Main HR Panel Content -->
+  <main>
+    <div class="panel-box">
+      <h2>HR Manager</h2>
+      <button id="manage-requests-btn">Διαχείριση Αιτημάτων</button>
+      <button id="communication-btn">Επικοινωνία με τον Retail Manager</button>
+    </div>
+  </main>
+
+  <!-- JavaScript -->
+  <script>
+    // Διαχείριση Αιτημάτων - Πατώντας πηγαίνουμε στη σελίδα αιτημάτων
+    document.getElementById('manage-requests-btn').addEventListener('click', function() {
+      window.location.href = 'requests_management.html';  // Εδώ βάζουμε τη σωστή διαδρομή
+    });
+
+    // Επικοινωνία με Retail Manager - Εμφάνιση μηνύματος υπο κατασκευή
+    document.getElementById('communication-btn').addEventListener('click', function() {
+      alert('Η λειτουργία "Επικοινωνία με τον Retail Manager" είναι υπό κατασκευή.');
+    });
+  </script>
+</body>
+</html>

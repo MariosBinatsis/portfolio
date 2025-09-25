@@ -1,0 +1,115 @@
+.banner {
+  background-color: #ffefc2;
+  color: #333;
+  padding: 12px 24px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.schedule-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #6d7d8d;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.schedule-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #b5c2cf;
+  color: #333;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+  padding: 14px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #d9d9d9;
+  font-weight: 600;
+}
+
+select {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: 'DM Sans', sans-serif;
+}
+
+optgroup {
+  font-weight: bold;
+  color: #343e4a;
+}
+
+.comments-section {
+  margin-top: 20px;
+  background-color: #b5c2cf;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.comments-section label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+.comments-section textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: 'DM Sans', sans-serif;
+  resize: none;
+  color: #333;
+}
+
+.submit-button {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.submit-button button {
+  background-color: #343e4a;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button button:hover {
+  background-color: #2b323d;
+}
+
+.nav-links a.notification-alert {
+  position: relative;
+}
+
+.nav-links a.notification-alert::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}

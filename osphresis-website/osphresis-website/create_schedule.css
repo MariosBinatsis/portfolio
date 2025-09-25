@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: #64778b;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #b5c2cf;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.text-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.1;
+}
+
+.logo-main {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+
+.logo-sub {
+  font-size: 16px;
+  color: white;
+}
+
+.nav-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-left: -15px;
+}
+
+.nav-links {
+  background-color: #d9d9d9;
+  padding: 10px 18px;
+  border-radius: 40px;
+  display: flex;
+  gap: 16px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 12px 24px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #cfcfcf;
+}
+
+.nav-links a.active {
+  background-color: white;
+  color: #000;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.nav-links a.notification-alert::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+}
+
+.user-badge {
+  background-color: #64778b;
+  color: white;
+  font-weight: 600;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+/* Κεντρική περιοχή δημιουργίας προγράμματος */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.create-schedule-section {
+  background-color: #b5c2cf;
+  padding: 60px 50px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.create-schedule-section h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.create-schedule-section .instructions {
+  margin-bottom: 20px;
+}
+
+#createScheduleForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#createScheduleForm textarea {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  height: 120px; /* Σταθερό ύψος για το κουτί εισαγωγής */
+  resize: none; /* Απενεργοποιούμε την αλλαγή μεγέθους */
+}
+
+#createScheduleForm button {
+  background-color: #3e4957;
+  color: white;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#createScheduleForm button:hover {
+  background-color: #2f3844;
+}
+
+h2 {
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+#loadingSpinner {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Chatbot Styles */
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.chatbot-toggle-btn {
+  background-color: #4b5b69;
+  color: white;
+  padding: 18px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.chatbot-window {
+  display: none;
+  background-color: #4b5b69;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  width: 350px;
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  font-size: 16px;
+  color: white;
+}
+
+.chatbot-window.show {
+  display: block;
+}
+
+.chatbot-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.close-chatbot-btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.chatbot-body {
+  margin-top: 20px;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.user-message,
+.ai-message {
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #2f3844;
+  color: white;
+  font-size: 14px;
+}
+
+.ai-message {
+  background-color: #3e4957;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
+.send-btn {
+  background-color: #4b5b69;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  border: none;
+}
+
+.send-btn:hover {
+  background-color: #2f3844;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .create-schedule-section {
+    padding: 40px 30px;
+  }
+
+  .create-schedule-section h1 {
+    font-size: 26px;
+  }
+
+  .chatbot-window {
+    width: 280px;
+    padding: 20px;
+  }
+
+  .chatbot-toggle-btn {
+    padding: 15px;
+    font-size: 18px;
+  }
+}

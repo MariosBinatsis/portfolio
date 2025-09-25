@@ -1,0 +1,85 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #64778b; /* ίδιο με home */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  background-color: #b5c2cf; /* ίδιο με navbar του home */
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 460px;
+}
+
+.brand-title .main {
+  font-size: 34px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.brand-title .sub {
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 30px;
+  letter-spacing: 0.4px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 5px;
+  color: white;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.remember input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.remember label {
+  color: white;
+  font-size: 14px;
+  margin: 0;
+}
+
+button {
+  background-color: #3e4957;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #343e4a;
+}

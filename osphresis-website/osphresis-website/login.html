@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Είσοδος Χρήστη – Osphresis</title>
+  <link rel="stylesheet" href="login.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="brand-title">
+      <div class="main">osphresis</div>
+      <div class="sub">perfumery</div>
+    </div>
+ 
+    <form id="loginForm">
+      <label for="username">Όνομα Χρήστη</label>
+      <input type="text" id="username" name="username" required>
+ 
+      <label for="password">Κωδικός Πρόσβασης</label>
+      <input type="password" id="password" name="password" required>
+ 
+      <div class="remember">
+        <input type="checkbox" id="remember" name="remember">
+        <label for="remember">Remember me</label>
+      </div>
+ 
+      <button type="submit">Σύνδεση</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(event){
+      event.preventDefault();
+      
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      // Αποθήκευση του ονόματος χρήστη στο τοπικό αποθηκευτικό χώρο (localStorage)
+      localStorage.setItem("username", username);
+
+      // Ελέγχουμε αν το όνομα χρήστη και ο κωδικός είναι σωστά
+      if (username && password) {
+        // Ανακατεύθυνση στην αρχική σελίδα
+        window.location.href = "home.html";
+      } else {
+        alert("Παρακαλώ συμπληρώστε τα πεδία.");
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Osphresis – Αρχική</title>
+  <link rel="stylesheet" href="home.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="text-logo">
+      <div class="logo-main">osphresis</div>
+      <div class="logo-sub">perfumery</div>
+    </div>
+
+    <div class="nav-container">
+      <nav class="nav-links">
+        <a href="submit_preferences.html">Υποβολή Προτιμήσεων</a>
+        <a href="schedule_preview.html">Εβδομαδιαίο Πρόγραμμα</a>
+        <a href="notifications.html" class="notification-alert">Ειδοποιήσεις</a>
+        <a href="managers_login.html">Managers' Panel</a>
+      </nav>
+    </div>
+
+    <div class="user-info">
+      <div class="user-badge" title="Γιάννης Νικολόπουλος">
+        <script>
+          // Ανάκτηση του ονόματος χρήστη από το localStorage
+          const username = localStorage.getItem("username");
+
+          // Ελέγχουμε αν υπάρχει το όνομα χρήστη
+          if (username) {
+            // Διαχωρίζουμε το όνομα και το επώνυμο
+            const nameParts = username.split(" ");  // Διαχωρισμός σε λέξεις (ονοματεπώνυμο)
+
+            // Παίρνουμε το πρώτο γράμμα του ονόματος και το πρώτο γράμμα του επωνύμου
+            const initials = nameParts[0].charAt(0).toUpperCase() + nameParts[1].charAt(0).toUpperCase();
+
+            // Εμφάνιση των αρχικών του χρήστη
+            document.querySelector(".user-badge").textContent = initials;
+
+            // Αλλάζουμε το title για να εμφανίζει το όνομα χρήστη
+            document.querySelector(".user-badge").title = username;
+          }
+        </script>
+      </div>
+    </div>
+  </header>
+
+  <!-- Καλωσόρισμα -->
+  <main class="main-home">
+    <section class="welcome-text">
+      <h1>Καλώς ήρθατε στην πλατφόρμα Osphresis</h1>
+      <p>
+        Εδώ μπορείτε να υποβάλετε τις εβδομαδιαίες προτιμήσεις σας,<br>
+        να ενημερώνεστε για αλλαγές στο πρόγραμμα και να λάβετε ειδοποιήσεις σε πραγματικό χρόνο.
+      </p>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Managers' Panel – Osphresis</title>
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="managers_login.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="text-logo">
+      <div class="logo-main">osphresis</div>
+      <div class="logo-sub">perfumery</div>
+    </div>
+
+    <div class="nav-container">
+      <nav class="nav-links">
+        <a href="submit_preferences.html">Υποβολή Προτιμήσεων</a>
+        <a href="schedule_preview.html">Εβδομαδιαίο Πρόγραμμα</a>
+        <a href="notifications.html" class="notification-alert">Ειδοποιήσεις</a>
+        <a href="managers_login.html" class="active">Managers' Panel</a>
+      </nav>
+    </div>
+
+    <div class="user-badge" title="Γιάννης Νικολόπουλος">ΓΝ</div>
+  </header>
+
+  <!-- Login Form -->
+  <main>
+    <div class="container">
+      <div class="brand-title">
+        <div class="main">osphresis</div>
+        <div class="sub">perfumery</div>
+      </div>
+
+      <form id="login-form">
+        <label for="password">Κωδικός Πρόσβασης</label>
+        <input type="password" id="password" name="password" required />
+        <button type="submit">Σύνδεση</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- JS -->
+  <script>
+    document.getElementById('login-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const password = document.getElementById('password').value;
+
+      // Έλεγχος ρόλου
+      if (password === '1111') {
+        window.location.href = 'hr_panel.html';  // HR Manager Panel
+      } else if (password === '0000') {
+        window.location.href = 'retail_manager_panel.html';  // Retail Manager Panel
+      } else {
+        alert('Μη έγκυρος κωδικός');
+      }
+    });
+
+    // Force reload on same nav click
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', e => {
+        if (link.href === window.location.href) {
+          e.preventDefault();
+          window.location.reload();
+        }
+      });
+    });
+  </script>
+</body>
+</html>

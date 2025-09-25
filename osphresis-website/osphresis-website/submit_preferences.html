@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Osphresis – Υποβολή Προτιμήσεων</title>
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="submit_preferences.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="text-logo">
+      <div class="logo-main">osphresis</div>
+      <div class="logo-sub">perfumery</div>
+    </div>
+
+    <div class="nav-container">
+      <nav class="nav-links">
+        <a href="submit_preferences.html" class="active">Υποβολή Προτιμήσεων</a>
+        <a href="schedule_preview.html">Εβδομαδιαίο Πρόγραμμα</a>
+        <a href="notifications.html" class="notification-alert">Ειδοποιήσεις</a>
+        <a href="managers_login.html">Managers' Panel</a>
+      </nav>
+    </div>
+
+    <div class="user-badge" title="Γιάννης Νικολόπουλος">ΓΝ</div>
+  </header>
+
+  <!-- Μπάρα Προθεσμίας -->
+  <section class="banner">
+    🕒 Προθεσμία Υποβολής: 5 Μαΐου 2025, 23:59
+  </section>
+
+  <!-- Περιεχόμενο -->
+  <section class="schedule-container">
+    <h2>Προτιμήσεις Εβδομάδας</h2>
+    <form>
+      <table>
+        <thead>
+          <tr>
+            <th>Ημέρα</th>
+            <th>Επιλογή</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Επαναλαμβανόμενες μέρες -->
+          <tr><td>Δευτέρα</td><td><select name="monday">
+            <option>-- Καμία --</option>
+            <optgroup label="Full-time">
+              <option>9-5</option>
+              <option>1-9</option>
+            </optgroup>
+            <optgroup label="Part-time">
+              <option>9-1</option>
+              <option>1-5</option>
+              <option>5-9</option>
+            </optgroup>
+            <option>Ρεπό</option>
+          </select></td></tr>
+
+          <tr><td>Τρίτη</td><td><select name="tuesday">
+            <option>-- Καμία --</option>
+            <optgroup label="Full-time">
+              <option>9-5</option>
+              <option>1-9</option>
+            </optgroup>
+            <optgroup label="Part-time">
+              <option>9-1</option>
+              <option>1-5</option>
+              <option>5-9</option>
+            </optgroup>
+            <option>Ρεπό</option>
+          </select></td></tr>
+
+          <tr><td>Τετάρτη</td><td><select name="wednesday">
+            <option>-- Καμία --</option>
+            <optgroup label="Full-time">
+              <option>9-5</option>
+              <option>1-9</option>
+            </optgroup>
+            <optgroup label="Part-time">
+              <option>9-1</option>
+              <option>1-5</option>
+              <option>5-9</option>
+            </optgroup>
+            <option>Ρεπό</option>
+          </select></td></tr>
+
+          <tr><td>Πέμπτη</td><td><select name="thursday">
+            <option>-- Καμία --</option>
+            <optgroup label="Full-time">
+              <option>9-5</option>
+              <option>1-9</option>
+            </optgroup>
+            <optgroup label="Part-time">
+              <option>9-1</option>
+              <option>1-5</option>
+              <option>5-9</option>
+            </optgroup>
+            <option>Ρεπό</option>
+          </select></td></tr>
+
+          <tr><td>Παρασκευή</td><td><select name="friday">
+            <option>-- Καμία --</option>
+            <optgroup label="Full-time">
+              <option>9-5</option>
+              <option>1-9</option>
+            </optgroup>
+            <optgroup label="Part-time">
+              <option>9-1</option>
+              <option>1-5</option>
+              <option>5-9</option>
+            </optgroup>
+            <option>Ρεπό</option>
+          </select></td></tr>
+
+          <tr><td>Σάββατο</td><td><select name="saturday">
+            <option>-- Καμία --</option>
+            <optgroup label="Full-time">
+              <option>9-5</option>
+              <option>1-9</option>
+            </optgroup>
+            <optgroup label="Part-time">
+              <option>9-1</option>
+              <option>1-5</option>
+              <option>5-9</option>
+            </optgroup>
+            <option>Ρεπό</option>
+          </select></td></tr>
+
+          <tr><td>Κυριακή</td><td><select name="sunday">
+            <option>-- Καμία --</option>
+            <optgroup label="Full-time">
+              <option>9-5</option>
+              <option>1-9</option>
+            </optgroup>
+            <optgroup label="Part-time">
+              <option>9-1</option>
+              <option>1-5</option>
+              <option>5-9</option>
+            </optgroup>
+            <option>Ρεπό</option>
+          </select></td></tr>
+        </tbody>
+      </table>
+
+      <div class="comments-section">
+        <label for="general_comments">Γενικά Σχόλια:</label>
+        <textarea id="general_comments" name="general_comments" rows="4"></textarea>
+      </div>
+
+      <div class="submit-button">
+        <button type="submit">Υποβολή</button>
+      </div>
+    </form>
+  </section>
+</body>
+</html>

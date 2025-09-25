@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Δημιουργία Προγράμματος με AI – Osphresis</title>
+  <link rel="stylesheet" href="create_schedule.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="text-logo">
+      <div class="logo-main">osphresis</div>
+      <div class="logo-sub">perfumery</div>
+    </div>
+
+    <div class="nav-container">
+      <nav class="nav-links">
+        <a href="submit_preferences.html">Υποβολή Προτιμήσεων</a>
+        <a href="schedule_preview.html">Εβδομαδιαίο Πρόγραμμα</a>
+        <a href="notifications.html" class="notification-alert">Ειδοποιήσεις</a>
+        <a href="retail_manager_panel.html" class="active">Retail Manager Panel</a>
+      </nav>
+    </div>
+
+    <div class="user-badge" title="Γιάννης Νικολόπουλος">ΓΝ</div>
+  </header>
+
+  <!-- Κεντρικό περιεχόμενο -->
+  <main>
+    <section class="create-schedule-section">
+      <h1>Δημιουργία Προγράμματος με AI</h1>
+      <div class="instructions">
+        <p>Συμπληρώστε τις τελικές προτιμήσεις για τους εργαζομένους. Ο AI θα δημιουργήσει αυτόματα το προσχέδιο προγράμματος για εσάς.</p>
+      </div>
+
+      <!-- Φόρμα για τις τελικές προτιμήσεις -->
+      <form id="createScheduleForm">
+        <label for="employeeData">Πληροφορίες Εργαζομένων (π.χ., Όνομα, Ώρες Εργασίας, Σχόλια):</label>
+        <textarea id="employeeData" name="employeeData" placeholder="Εισάγετε τελικές προτιμήσεις εργαζομένων..." required></textarea>
+
+        <button type="submit">Δημιουργία Προγράμματος</button>
+      </form>
+
+      <div class="loading" id="loadingSpinner" style="display: none;">Δημιουργία προσχεδίου...</div>
+
+      <h2>Προσχέδιο Προγράμματος:</h2>
+      <pre id="scheduleOutput"></pre>
+    </section>
+  </main>
+
+  <!-- Πλωτό AI Assistant (Chatbot) -->
+  <div class="chatbot-container">
+    <button id="chatbotToggle" class="chatbot-toggle-btn">💬 AI Assistant</button>
+    <div id="chatbotWindow" class="chatbot-window">
+      <div class="chatbot-header">
+        <span>AI Assistant</span>
+        <button id="closeChatbot" class="close-chatbot-btn">X</button>
+      </div>
+      <div class="chatbot-body">
+        <div id="chatMessages" class="chat-messages"></div>
+      </div>
+      <textarea id="userMessage" placeholder="Στείλτε το μήνυμά σας..." rows="3"></textarea>
+      <button id="sendMessage" class="send-btn">Αποστολή</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('createScheduleForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const employeeData = document.getElementById('employeeData').value;
+
+      // Αποστολή των δεδομένων στον AI
+      const user_data = {
+        employees: employeeData
+      };
+
+      // Εμφάνιση του loading spinner
+      document.getElementById('loadingSpinner').style.display = 'block';
+
+      fetch('/generate_schedule', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ user_data: user_data })
+      })
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('loadingSpinner').style.display = 'none'; // Κρύβουμε το spinner
+        if (data.schedule) {
+          document.getElementById('scheduleOutput').textContent = data.schedule;
+        } else {
+          document.getElementById('scheduleOutput').textContent = "Σφάλμα κατά τη δημιουργία του προγράμματος!";
+        }
+
+        // Εμφάνιση των δεδομένων στον AI Assistant
+        const aiMessage = document.createElement('div');
+        aiMessage.classList.add('ai-message');
+        aiMessage.textContent = `Ο AI δημιούργησε το προσχέδιο προγράμματος με τις εξής πληροφορίες: ${employeeData}`;
+        document.getElementById('chatMessages').appendChild(aiMessage);
+      })
+      .catch(error => {
+        document.getElementById('loadingSpinner').style.display = 'none'; // Κρύβουμε το spinner
+        document.getElementById('scheduleOutput').textContent = "Σφάλμα: " + error;
+      });
+    });
+
+    // Εμφάνιση / Απόκρυψη Chatbot
+    document.getElementById('chatbotToggle').addEventListener('click', function() {
+      document.getElementById('chatbotWindow').classList.toggle('show');
+    });
+
+    // Κλείσιμο Chatbot
+    document.getElementById('closeChatbot').addEventListener('click', function() {
+      document.getElementById('chatbotWindow').classList.remove('show');
+    });
+
+    // Αποστολή Μηνύματος στον AI Assistant
+    document.getElementById('sendMessage').addEventListener('click', function() {
+      const message = document.getElementById('userMessage').value;
+      if (message) {
+        // Προσθήκη του μηνύματος στο παράθυρο του chatbot
+        const messageElement = document.createElement('div');
+        messageElement.classList.add('user-message');
+        messageElement.textContent = message;
+        document.getElementById('chatMessages').appendChild(messageElement);
+        document.getElementById('userMessage').value = ''; // Άδειασμα του πεδίου
+
+        // Εδώ μπορείς να προσθέσεις τη λογική για να στείλεις το μήνυμα στον AI μέσω API
+        // Προς το παρόν, προσθέτουμε μια στατική απάντηση από τον AI
+        const aiMessage = document.createElement('div');
+        aiMessage.classList.add('ai-message');
+        aiMessage.textContent = "Ο AI Assistant επεξεργάζεται το αίτημά σας...";
+        document.getElementById('chatMessages').appendChild(aiMessage);
+      }
+    });
+  </script>
+</body>
+</html>

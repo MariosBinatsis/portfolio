@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <title>Διαχείριση Αιτημάτων</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="requests_management.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="text-logo">
+      <div class="logo-main">osphresis</div>
+      <div class="logo-sub">perfumery</div>
+    </div>
+    <div class="nav-container">
+      <nav class="nav-links">
+        <a href="submit_preferences.html">Υποβολή Προτιμήσεων</a>
+        <a href="schedule_preview.html">Εβδομαδιαίο Πρόγραμμα</a>
+        <a href="notifications.html">Ειδοποιήσεις</a>
+        <a href="#" class="active">HR Manager Panel</a>
+      </nav>
+    </div>
+    <div class="user-badge">ΓΝ</div>
+  </header>
+ 
+  <!-- Περιεχόμενο -->
+  <main>
+    <!-- Πίνακας Παγκρατί -->
+    <div class="store-box">
+      <h2>Κατάστημα Παγκράτι</h2>
+      <div class="schedule-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Εργαζόμενος</th>
+              <th>Δευτέρα</th>
+              <th>Τρίτη</th>
+              <th>Τετάρτη</th>
+              <th>Πέμπτη</th>
+              <th>Παρασκευή</th>
+              <th>Σάββατο</th>
+              <th>Κυριακή</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Εργαζόμενος 1</td>
+              <td><div class="time-cell"><span class="readonly-time">09:00–17:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">09:00–17:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">Ρεπό</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">09:00–17:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">13:00–21:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">09:00–17:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><span class="readonly-cell">–</span></td>
+            </tr>
+            <tr>
+              <td>Εργαζόμενος 2</td>
+              <td><div class="time-cell"><span class="readonly-time">09:00–17:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">Ρεπό</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">09:00–17:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">09:00–17:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">09:00–17:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">13:00–21:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><span class="readonly-cell">–</span></td>
+            </tr>
+            <tr>
+              <td>Εργαζόμενος 3</td>
+              <td><div class="time-cell"><span class="readonly-time">09:00–17:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">09:00–17:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">09:00–17:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">13:00–21:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">Ρεπό</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">09:00–17:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><span class="readonly-cell">–</span></td>
+            </tr>
+            <tr>
+              <td>Εργαζόμενος 4 (Part-time)</td>
+              <td><div class="time-cell"><span class="readonly-time">17:00–21:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">13:00–17:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">17:00–21:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">Ρεπό</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">09:00–13:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">17:00–21:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><span class="readonly-cell">–</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+ 
+    <!-- Πίνακας Πειραιά -->
+    <div class="store-box">
+      <h2>Κατάστημα Πειραιά</h2>
+      <div class="schedule-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Εργαζόμενος</th>
+              <th>Δευτέρα</th>
+              <th>Τρίτη</th>
+              <th>Τετάρτη</th>
+              <th>Πέμπτη</th>
+              <th>Παρασκευή</th>
+              <th>Σάββατο</th>
+              <th>Κυριακή</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Εργαζόμενος 1</td>
+              <td><div class="time-cell"><span class="readonly-time">09:00–17:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">13:00–21:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">09:00–17:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">13:00–21:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">Ρεπό</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">13:00–21:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><span class="readonly-cell">–</span></td>
+            </tr>
+            <tr>
+              <td>Εργαζόμενος 2</td>
+              <td><div class="time-cell"><span class="readonly-time">13:00–21:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">09:00–17:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">Ρεπό</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">13:00–21:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">13:00–21:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">09:00–17:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><span class="readonly-cell">–</span></td>
+            </tr>
+            <tr>
+              <td>Εργαζόμενος 3 (Part-time)</td>
+              <td><div class="time-cell"><span class="readonly-time">17:00–21:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">13:00–17:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">Ρεπό</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">17:00–21:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">13:00–17:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><div class="time-cell"><span class="readonly-time">09:00–13:00</span><div class="dropdown"><button class="dropdown-toggle">▾</button><div class="dropdown-menu"><div class="accept-option">Αποδοχή</div><div class="reject-option">Απόρριψη</div></div></div></div></td>
+              <td><span class="readonly-cell">–</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+ 
+  <script>
+    document.addEventListener('click', () => {
+      document.querySelectorAll('.dropdown-menu').forEach(menu => menu.style.display = 'none');
+    });
+ 
+    document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+      toggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        document.querySelectorAll('.dropdown-menu').forEach(menu => menu.style.display = 'none');
+        const menu = toggle.nextElementSibling;
+        if (menu) menu.style.display = 'block';
+      });
+    });
+ 
+    document.querySelectorAll('.accept-option').forEach(option => {
+      option.addEventListener('click', () => {
+        const cell = option.closest('.time-cell');
+        cell.classList.add('accepted');
+        cell.classList.remove('rejected');
+        option.parentElement.style.display = 'none';
+      });
+    });
+ 
+    document.querySelectorAll('.reject-option').forEach(option => {
+      option.addEventListener('click', () => {
+        const cell = option.closest('.time-cell');
+        cell.classList.add('rejected');
+        cell.classList.remove('accepted');
+        option.parentElement.style.display = 'none';
+      });
+    });
+  </script>
+</body>
+</html>

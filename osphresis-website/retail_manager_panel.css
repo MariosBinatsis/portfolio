@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-logo .logo-main {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 400;
+}
+
+.text-logo .logo-sub {
+  font-size: 0.8rem;
+  color: #777;
+  font-weight: 400;
+}
+
+.nav-container {
+  display: flex;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #7f5af0;
+}
+
+.user-badge {
+  background-color: #7f5af0;
+  color: #fff;
+  padding: 0.5rem 0.8rem;
+  border-radius: 50%;
+  font-weight: 400;
+  cursor: default;
+}
+
+/* Κεντρικό περιεχόμενο */
+main {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+}
+
+.panel-card {
+  background-color: #fff;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.panel-card h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.panel-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.panel-btn {
+  display: block;
+  background-color: #7f5af0;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  transition: background-color 0.3s ease;
+  font-weight: 400;
+}
+
+.panel-btn:hover {
+  background-color: #6a48c7;
+}
+
+/* Ειδοποιήσεις */
+.notification-alert {
+  position: relative;
+}
+
+.notification-alert::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  right: -8px;
+  width: 8px;
+  height: 8px;
+  background-color: #ff5959;
+  border-radius: 50%;
+}

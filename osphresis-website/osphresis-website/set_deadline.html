@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ορισμός Προθεσμίας – Osphresis</title>
+  <link rel="stylesheet" href="set_deadline.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="text-logo">
+      <div class="logo-main">osphresis</div>
+      <div class="logo-sub">perfumery</div>
+    </div>
+ 
+    <div class="nav-container">
+      <nav class="nav-links">
+        <a href="submit_preferences.html">Υποβολή Προτιμήσεων</a>
+        <a href="schedule_preview.html">Εβδομαδιαίο Πρόγραμμα</a>
+        <a href="notifications.html" class="notification-alert">Ειδοποιήσεις</a>
+        <a href="retail_manager_panel.html" class="active">Retail Manager Panel</a>
+      </nav>
+    </div>
+ 
+    <div class="user-badge" title="Γιάννης Νικολόπουλος">ΓΝ</div>
+  </header>
+ 
+  <!-- Deadline Form -->
+  <main>
+    <section class="panel-card">
+      <h1>Ορισμός Προθεσμίας</h1>
+      <form id="deadline-form">
+        <label for="deadline-date">Ημερομηνία Λήξης</label>
+        <input type="date" id="deadline-date" name="deadline-date" required>
+ 
+        <label for="deadline-hour">Ώρα Λήξης</label>
+        <div class="time-select">
+          <select id="deadline-hour" name="deadline-hour" required>
+            <option value="">Ώρα</option>
+          </select>
+          <span>:</span>
+          <select id="deadline-minute" name="deadline-minute" required>
+            <option value="">Λεπτά</option>
+          </select>
+        </div>
+ 
+        <button type="submit">Καταχώρηση Προθεσμίας</button>
+      </form>
+    </section>
+  </main>
+ 
+  <script>
+    // Populate hour and minute dropdowns
+    const hourSelect = document.getElementById('deadline-hour');
+    const minuteSelect = document.getElementById('deadline-minute');
+ 
+    for (let i = 1; i <= 23; i++) {
+      const option = document.createElement('option');
+      option.value = i.toString().padStart(2, '0');
+      option.textContent = i.toString().padStart(2, '0');
+      hourSelect.appendChild(option);
+    }
+ 
+    for (let i = 0; i <= 59; i++) {
+      const option = document.createElement('option');
+      option.value = i.toString().padStart(2, '0');
+      option.textContent = i.toString().padStart(2, '0');
+      minuteSelect.appendChild(option);
+    }
+ 
+    // Handle form submission
+    document.getElementById('deadline-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const date = document.getElementById('deadline-date').value;
+      const hour = document.getElementById('deadline-hour').value;
+      const minute = document.getElementById('deadline-minute').value;
+ 
+      if (!hour || !minute) {
+        alert("Παρακαλώ επιλέξτε ώρα και λεπτά.");
+        return;
+      }
+ 
+      alert(`Η προθεσμία ορίστηκε για τις ${date} και ώρα ${hour}:${minute}.`);
+    });
+  </script>
+</body>
+</html>

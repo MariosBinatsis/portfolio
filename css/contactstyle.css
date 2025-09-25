@@ -1,0 +1,169 @@
+/* custom scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8a7209;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(120, 100%, 10% / 1);
+}
+
+/*NAV BAR*/
+body{
+    overflow-x: hidden;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('../img/background.png');
+    background-attachment: fixed;
+  }
+  
+  .navbar{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgba(0,0,0,0.85);
+    background-size: cover;
+    border-bottom: 5px solid #000000;
+    border-image: url(../img/line2.png);
+    border-image-repeat: stretch;
+    border-image-slice: 1;
+  }
+  
+  .logo {
+    width: 190px;
+    height: 160px;
+    cursor: pointer;
+  }
+  
+  .navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+    position: relative;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .navbar ul li::after{
+    content: '';
+    height:  3px;
+    width: 0;
+    background: #8a7209;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+  }
+  
+  .navbar ul li:hover::after{
+    width: 100%;
+  }
+
+  .navbar ul li.active a{
+    color:#8a7209;
+  }
+
+/*CONTACT*/
+input[type=text], select, textarea {
+  outline: none;
+  margin-top: 17px;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #8a7209;
+  padding: 10px;
+  color: #ffffff;
+  width: 30vw;
+}
+
+.container {
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 25vh;
+  margin-left: 0vw;
+  height: 100vh;
+}
+
+.column {
+  float: left;
+  width: 40vw;
+  margin-top: 5vh;
+  margin-left: 10vh;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ALLAGH SEIRAS*/
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.map{
+border: solid;
+border: 3px solid;
+border-color:#8a7209;
+border-radius: 3px;
+box-shadow: 0 2px 8px 0 rgba(229, 255, 0, 0.4);
+}
+
+.contactimg{
+  width: 300px;
+  height: 100px;
+}
+
+/*BUTTON*/
+  button{
+    width: 200px;
+    padding: 15px 0 ;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+    border: 2px solid #8a7209;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  span{
+    background: #8a7209;
+    height: 100%;
+    width: 0;
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+  }
+  
+  button:hover span{
+    width: 100%;
+  }
+  
+  button:hover{
+    border: none;
+  }
