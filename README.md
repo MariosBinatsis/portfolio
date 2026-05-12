@@ -1,8 +1,8 @@
-# Marios Binatsis — Project Portfolio
+# Marios Binatsis — Founder & Product Portfolio
 
-This portfolio includes selected web development projects, product case studies and frontend work.  
+This portfolio highlights projects, product case studies and startup work centered around digital product thinking, marketplace design and real-world execution.
 
-The main featured project is **Sezonly**, a live marketplace application for seasonal jobs in Greece.
+The main featured project is **Sezonly**, a live marketplace platform for seasonal jobs in Greece.
 
 ---
 
@@ -12,55 +12,53 @@ The main featured project is **Sezonly**, a live marketplace application for sea
 
 **Sezonly** is a mobile-first marketplace for seasonal jobs in the Greek islands, connecting young workers with tourism businesses such as hotels, restaurants, cafés and beach bars.
 
-The platform was created to make seasonal job searching more organized, transparent and efficient compared to scattered Facebook groups, generic job boards and private messages.
+The idea behind Sezonly came from a clear market problem: seasonal job searching in Greece is still highly fragmented, unstructured and often based on Facebook groups, private messages and unclear job terms. Sezonly was created to offer a more organized, transparent and trustworthy experience for both workers and employers.
 
 **Live website:** https://www.sezonly.gr/  
 
 **Case study:** [View Sezonly Project](./projects/sezonly)
 
-### What I built
+### What I built and led
 
-- Mobile-first landing page and job browsing experience
+- Product concept and founder vision
 
-- Worker and employer role flows
+- Marketplace logic between workers and employers
 
-- Job listing and job details pages
+- User flow design for both sides of the platform
 
-- Worker profile creation
+- Positioning and differentiation strategy
 
-- Employer dashboard
+- Trust-oriented product structure for seasonal hiring
 
-- Application management flow
+- Worker and employer experience design
 
-- Authentication and protected routes
+- Feature planning and product prioritization
 
-- Supabase backend integration
+- Early-stage validation and go-to-market thinking
 
-- Responsive UI for mobile and desktop
+- Platform execution from idea to live product
 
-### Tech Stack
+### Focus Areas
 
-- React
+- Startup building
 
-- TypeScript
+- Product strategy
 
-- Supabase
+- Marketplace design
 
-- PostgreSQL
+- User experience thinking
 
-- React Router
+- Growth and acquisition strategy
 
-- Tailwind CSS
+- Business model thinking
 
-- shadcn/ui
-
-- Vercel
+- Founder-led execution
 
 ### My Role
 
-Founder, product designer and developer.
+Founder and product builder.
 
-I worked on the product strategy, UX/UI decisions, frontend development, backend integration, marketplace structure, employer/worker flows and early user acquisition strategy.
+I created and developed Sezonly from the ground up, from the original idea and market reasoning to the product structure, experience flows, positioning and execution. My role combines product thinking, business strategy, user understanding, marketplace logic and hands-on building.
 
 ---
 
@@ -70,14 +68,14 @@ I worked on the product strategy, UX/UI decisions, frontend development, backend
 
 |---|---|---|
 
-| [Calendar project](./calendar) | Frontend calendar project built as part of my web development practice | Frontend Project |
+| [Calendar project](./calendar) | Frontend project developed as part of my broader digital product learning journey | Product / Frontend Practice |
 
-| [Osphresis website](./osphresis-website) | Static website project focused on layout, structure and presentation | Website Project |
+| [Osphresis website](./osphresis-website) | Website project focused on structure, presentation and digital experience thinking | Website Project |
 
 ---
 
 ## About This Portfolio
 
-This repository includes both early frontend practice projects and more advanced product work.  
+My main interest is in building startups and digital products that solve real problems and create practical value.
 
-My main focus is on building digital products, marketplaces and web applications with real user flows and practical business use cases.
+I am especially interested in product strategy, marketplace models, founder-led execution, early-stage growth, user behavior and the overall process of turning an idea into a live and usable product.
