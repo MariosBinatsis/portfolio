@@ -43,10 +43,10 @@ As part of the strategic re-engineering phase of the project, I designed and bud
 Mapped out the group's entire operational layout into a structured Process Tree covering 4 main pillars: Financial Auditing, F&B Cost Control, Digital Marketing, and Event Management. Process diagrams were modeled using **ArchiMate** to match enterprise mapping standards.
 
 ### 2. Performance Management (Balanced Scorecard)
-Designed a strategic framework with specific performance metrics (KPIs) across Financial, Customer, Internal Process, and Learning & Growth perspectives to help the group evaluate venue profitability and customer satisfaction data systematically[cite: 1].
+Designed a strategic framework with specific performance metrics (KPIs) across Financial, Customer, Internal Process, and Learning & Growth perspectives to help the group evaluate venue profitability and customer satisfaction data systematically.
 
 ---
 
 ## Tech & Analysis Tools Used
-* **Business Analysis:** Systems Thinking, Operations Strategy, Financial Budgeting[cite: 1].
-* **Tools:** Microsoft Excel (Advanced modeling & forecasting), ArchiMate (Process modeling)[cite: 1].
+* **Business Analysis:** Systems Thinking, Operations Strategy, Financial Budgeting.
+* **Tools:** Microsoft Excel (Advanced modeling & forecasting), ArchiMate (Process modeling).
