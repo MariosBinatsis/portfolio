@@ -72,6 +72,21 @@ Sezonly is a live MVP / early-stage marketplace.
 
 The product has been launched publicly and is being used as a real startup project, not only as a school or demo project.
 
-## Screenshots
+## Product Experience & UI/UX Overview
 
-Screenshots will be added soon.
+### 🔍 Search & Result Layout (Job Cards)
+<p align="center">
+  <img src="Screenshot 2026-07-04 at 2.26.15 PM.jpg" width="45%" alt="Sezonly Verified Search">
+  <img src="Screenshot 2026-07-04 at 2.27.00 PM.jpg" width="45%" alt="Job Listings Result Feed">
+</p>
+
+### 🎛️ Advanced Filtering & Job Details
+<p align="center">
+  <img src="Screenshot 2026-07-04 at 2.29.05 PM.jpg" width="45%" alt="Advanced Marketplace Filters">
+  <img src="Screenshot 2026-07-04 at 2.27.31 PM.jpg" width="45%" alt="Structured Job Posting Layout">
+</p>
+
+### 👥 Unique Value Proposition: "Σεζόν με Παρέα" (Group Features)
+<p align="center">
+  <img src="Screenshot 2026-07-04 at 2.26.40 PM.jpg" width="45%" alt="Shared Season Group Onboarding">
+  <img src="Screenshot 2026-07-04 at 2.25.44 PM.jpg" width="45%" alt="Group Job Postings UI Layout">
