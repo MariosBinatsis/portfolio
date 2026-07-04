@@ -1,52 +1,126 @@
 # Momentum Group — Business Analysis & Digital Transformation Case Study
 
-A comprehensive operational and financial analysis of **Momentum Group**, a major hospitality and entertainment network in Greece managing 15 distinct brands (including Nalu, Opus, Akanthus, and Posidonio) with an annual turnover exceeding **€35M** and **1M+ annual visitors**.
+A business analysis and process optimization study focused on **Momentum Group**, a leading hospitality and entertainment network operating multiple venues and brands across Greece.
+
+The project explores how digital systems, process redesign, and data-driven decision making can improve operational efficiency, financial visibility, and B2B event management.
+
+---
 
 ## Project Overview
-This project was developed for the **Process Analysis & Modeling** course at the Department of Management Science & Technology (DMST), AUEB, and received a grade of **9.0 / 10.0**. 
 
-The goal was to audit the group's real-world operations, map their current workflows, and propose costed tech solutions to solve operational bottlenecks and improve B2B event management.
+This project was developed for the **Process Analysis & Modeling** course at the **Department of Management Science & Technology (DMST), Athens University of Economics and Business (AUEB)** and received a final grade of **9.0 / 10.0**.
 
----
-
-## The Challenge (Current Inefficiencies)
-Through field research and interviews, I mapped the group's current "AS-IS" state and identified key operational vulnerabilities:
-* **Data Silos:** Critical operational data (daily cash reconciliations, invoices, and event bookings) were fragmented across local POS terminals, loose Excel files, and messaging apps like Viber and WhatsApp.
-* **Manual Bottlenecks:** The lack of a centralized system meant that financial reporting required heavy manual cross-checking by the finance team at the end of each month.
-* **B2B Coordination Gaps:** Booking large corporate events relied mostly on informal communication between event managers and store managers, increasing the risk of miscommunication regarding menus, deposits, and scheduling.
+The objective was to analyze existing operational workflows, identify inefficiencies, and design scalable digital initiatives capable of supporting growth, improving coordination, and reducing administrative complexity.
 
 ---
 
-## Proposed Solutions (Academic Financial Forecasting)
-As part of the strategic re-engineering phase of the project, I designed and budgeted 3 digital transformation proposals to streamline operations. *Note: Budgets represent academic market cost estimations calculated for the business case, not active capital allocation.*
+## Key Challenges Identified
 
-### 1. Integrated BI Dashboard System
-* **Concept:** A centralized Business Intelligence dashboard that pulls daily sales and expense data from all 15 profit centers into one view.
-* **Estimated Implementation Cost:** €25,000 – €35,000.
-* **Expected Impact:** Eliminates manual data aggregation, giving executives a clear view of real-time cash flow and cost anomalies.
+Following process mapping and business analysis, three major operational challenges were identified:
 
-### 2. Centralized Workforce Management Platform
-* **Concept:** A digital shift-scheduling platform tailored to the high seasonality and weekend traffic spikes of hospitality venues.
-* **Estimated Implementation Cost:** €15,000 – €30,000.
-* **Expected Impact:** Optimizes staff allocation, tracks real-time labor costs against revenue, and allows managers to easily share available staff between venues during peak hours.
+### Data Fragmentation
 
-### 3. B2B Event CRM & Reservation Workflow
-* **Concept:** A structured CRM pipeline to manage the entire lifecycle of a corporate event, from the initial request to negotiation and final invoice settlement.
-* **Estimated Implementation Cost:** €35,000 – €45,000.
-* **Expected Impact:** Organizes client communication, secures deposit tracking, and provides historical data on repeat corporate clients to back up future price negotiations.
+Critical operational information, including financial reconciliations, invoices, and event-related data, was dispersed across multiple systems, spreadsheets, and communication channels.
+
+### Manual Reporting Processes
+
+The absence of centralized reporting mechanisms increased administrative workload and limited real-time visibility into business performance.
+
+### B2B Event Coordination
+
+Corporate event management relied heavily on informal communication practices, creating risks related to scheduling, approvals, deposits, and client follow-up.
+
+---
+
+## Proposed Digital Initiatives
+
+The following initiatives were designed as strategic business-case recommendations developed for academic purposes.
+
+### 1. Integrated Business Intelligence Dashboard
+
+* **Objective:** Provide management teams with consolidated visibility across venues through a centralized reporting environment.
+* **Indicative Investment:** €25,000 – €35,000
+* **Potential Impact:**
+  * Reduced reporting effort
+  * Faster decision-making
+  * Improved KPI monitoring
+  * Increased visibility into revenue and cost trends
+
+### 2. Workforce Management Platform
+
+* **Objective:** Improve scheduling efficiency and workforce allocation across venues experiencing highly seasonal demand.
+* **Indicative Investment:** €15,000 – €30,000
+* **Potential Impact:**
+  * Better staffing utilization
+  * Real-time labor cost monitoring
+  * Increased operational flexibility
+  * Improved resource allocation during peak periods
+
+### 3. B2B Event CRM System
+
+* **Objective:** Digitize the end-to-end corporate event lifecycle, from inquiry management to invoice settlement.
+* **Indicative Investment:** €35,000 – €45,000
+* **Potential Impact:**
+  * Structured client communication
+  * Deposit tracking
+  * Historical customer insights
+  * Better support for future negotiations
 
 ---
 
 ## Core Deliverables & Frameworks Applied
 
-### 1. Process Mapping & Architecture
-Mapped out the group's entire operational layout into a structured Process Tree covering 4 main pillars: Financial Auditing, F&B Cost Control, Digital Marketing, and Event Management. Process diagrams were modeled using **ArchiMate** to match enterprise mapping standards.
+### 1. Process Architecture
 
-### 2. Performance Management (Balanced Scorecard)
-Designed a strategic framework with specific performance metrics (KPIs) across Financial, Customer, Internal Process, and Learning & Growth perspectives to help the group evaluate venue profitability and customer satisfaction data systematically.
+Mapped the organization's operational landscape into a structured **Process Tree** covering four major domains:
+
+* Financial Auditing
+* F&B Cost Control
+* Digital Marketing
+* Event Management
+
+Business processes were modeled using **ArchiMate** principles and enterprise architecture methodologies.
+
+### 2. Performance Management Framework
+
+Designed a **Balanced Scorecard** framework incorporating KPIs across four perspectives:
+
+* Financial
+* Customer
+* Internal Processes
+* Learning & Growth
+
+The framework aims to support long-term performance monitoring and strategic decision-making.
 
 ---
 
-## Tech & Analysis Tools Used
-* **Business Analysis:** Systems Thinking, Operations Strategy, Financial Budgeting.
+## Methodologies & Tools
+
+### Business Analysis
+
+* Systems Thinking
+* Process Analysis
+* Operations Strategy
+* Digital Transformation
+* Financial Evaluation
+* Business Case Development
+
+### Tools
+
+* Microsoft Excel
+* ArchiMate
+* KPI Design
+* Process Modeling
+* Forecasting & Scenario Analysis
+
+---
+
+## Key Outcomes
+
+* Identified operational inefficiencies across multiple business functions
+* Designed three digital transformation initiatives
+* Developed enterprise architecture models
+* Proposed process optimization opportunities
+* Built a performance management framework
+* Achieved a final project grade of **9.0 / 10.0** Thinking, Operations Strategy, Financial Budgeting.
 * **Tools:** Microsoft Excel (Advanced modeling & forecasting), ArchiMate (Process modeling).
